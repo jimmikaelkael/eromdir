@@ -1,0 +1,20 @@
+eromdir - PS2 erom dump files extractor
+---------------------------------------
+
+The goal this program is to allow to list files from an Encrypted PlayStation2
+ROM dump file. It simply does what the PS2 does to access the 'erom' 
+filesystem.
+
+Looking at late Playstation 2 models Encrypted ROM (7000x BIOS and above) will
+list around 50 files, some files contains binary code for the DVDplayer, some
+other files are gzip compressed resources. 
+Older models only had 2 files in their Encrypted ROM: DVDELF and UDFIO driver.
+
+To build eromdir you need autotools and gcc compiler:
+- first run the bootstrap script (thanks to Sam Hocevar for writing it)
+- configure
+- make
+
+----------------------------------------------------------------
+This is research software. It comes with absolutely no warranty.
+
